@@ -1,5 +1,7 @@
 package ru.dchertanov.book.general.model
 
+import java.util.Collections
+
 class BookNode(
     val title: String = "",
     val text: String = "",
@@ -18,6 +20,5 @@ class BookNode(
         this.childes.addAll(childes)
     }
 
-    //TODO Отрефакторить
-    fun getChildes(): List<BookNode> = childes
+    fun getChildes(): List<BookNode> = Collections.unmodifiableList(childes)
 }
