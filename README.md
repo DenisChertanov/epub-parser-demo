@@ -1,11 +1,11 @@
-## Запуск демонстрации:
+## Run demonstration:
 
-1. В `ru.dchertanov.Main.testEpubParsing()` необходимо указать путь до epub файла, который необходимо распарсить
-2. Запустить программу - `gradlew run`
+1. In `ru.dchertanov.Main.testEpubParsing()` specify the path to the `.epub` file to be parsed
+2. Run program - `gradlew run`
 
-## Исправление проблемы с Slf4j (если возникает):
+## Solve problem with Slf4j (if happened):
 
-Необходимо исключить зависимость `slf4j-simple`
+Need to exclude dependency `slf4j-simple`
 
 ```kotlin
 dependencies {
